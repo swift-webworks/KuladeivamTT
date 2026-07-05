@@ -28,34 +28,121 @@
   <section class="bg-light-custom">
     <div class="container">
       <div class="row g-4">
-        {% for vehicle in vehicles %}
+
         <div class="col-lg-4 col-md-6 reveal">
           <div class="vehicle-card card">
             <div class="img-wrap">
-              <img src="{{ vehicle.vehicle_image.url }}" alt="{{ vehicle.vehicle_name }}">
+              <img src="{% static 'images/vehicles/mini-21.jpeg' %}" alt="Mini Bus 21 Seater">
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start mb-2">
-                <h5 class="card-title mb-0">{{ vehicle.vehicle_name }}</h5>
-                <span class="capacity-badge"><i class="bi bi-people-fill me-1"></i>{{ vehicle.capacity }} Seater</span>
+                <h5 class="card-title mb-0">Mini Bus 21 Seater</h5>
+                <span class="capacity-badge"><i class="bi bi-people-fill me-1"></i>21 Seater</span>
               </div>
-              <p class="card-text text-muted small">{{ vehicle.description }}</p>
+              <p class="card-text text-muted small">Spacious mini bus ideal for large group tours, pilgrimages and outstation trips across India.</p>
               <div class="d-flex justify-content-between align-items-center mt-3">
-                <span class="price-tag">&#8377;{{ vehicle.price }}</span>
+                <span class="price-tag">Contact for Price</span>
                 <a href="{% url 'index' %}#contact" class="btn btn-sm btn-primary-custom">Book Now</a>
               </div>
             </div>
           </div>
         </div>
-        {% empty %}
-        <div class="col-12">
-          <div class="empty-state">
-            <i class="bi bi-truck display-4 d-block mb-3"></i>
-            <h5>No vehicles added yet</h5>
-            <p>Please check back soon, or add vehicles from the Django admin dashboard.</p>
+
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="vehicle-card card">
+            <div class="img-wrap">
+              <img src="{% static 'images/vehicles/mini-19.jpeg' %}" alt="Mini Bus 19 Seater">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Mini Bus 19 Seater</h5>
+                <span class="capacity-badge"><i class="bi bi-people-fill me-1"></i>19 Seater</span>
+              </div>
+              <p class="card-text text-muted small">Comfortable mini bus perfect for medium-sized groups, family functions and outings.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">Contact for Price</span>
+                <a href="{% url 'index' %}#contact" class="btn btn-sm btn-primary-custom">Book Now</a>
+              </div>
+            </div>
           </div>
         </div>
-        {% endfor %}
+
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="vehicle-card card">
+            <div class="img-wrap">
+              <img src="{% static 'images/vehicles/car-8.jpeg' %}" alt="Sedan Car 8 Seater">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Sedan Car 8 Seater</h5>
+                <span class="capacity-badge"><i class="bi bi-people-fill me-1"></i>8 Seater</span>
+              </div>
+              <p class="card-text text-muted small">Reliable and comfortable car perfect for family trips and short outstation travel.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">Contact for Price</span>
+                <a href="{% url 'index' %}#contact" class="btn btn-sm btn-primary-custom">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="vehicle-card card">
+            <div class="img-wrap">
+              <img src="{% static 'images/vehicles/car_TMAjcrM.jpeg' %}" alt="Sedan Car 4 Seater">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Sedan Car 4 Seater</h5>
+                <span class="capacity-badge"><i class="bi bi-people-fill me-1"></i>4 Seater</span>
+              </div>
+              <p class="card-text text-muted small">Reliable and comfortable car perfect for family trips and short outstation travel.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">Contact for Price</span>
+                <a href="{% url 'index' %}#contact" class="btn btn-sm btn-primary-custom">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="vehicle-card card">
+            <div class="img-wrap">
+              <img src="{% static 'images/vehicles/car.jpeg' %}" alt="Premium Car 8 Seater">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Premium Car 8 Seater</h5>
+                <span class="capacity-badge"><i class="bi bi-people-fill me-1"></i>8 Seater</span>
+              </div>
+              <p class="card-text text-muted small">Premium comfortable car ideal for small groups and business travel across India.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">Contact for Price</span>
+                <a href="{% url 'index' %}#contact" class="btn btn-sm btn-primary-custom">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="vehicle-card card">
+            <div class="img-wrap">
+              <img src="{% static 'images/vehicles/tempo.jpeg' %}" alt="Tempo Traveller 13 Seater">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Tempo Traveller 13 Seater</h5>
+                <span class="capacity-badge"><i class="bi bi-people-fill me-1"></i>13 Seater</span>
+              </div>
+              <p class="card-text text-muted small">Spacious tempo traveller great for group outings and comfortable long distance trips.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-tag">Contact for Price</span>
+                <a href="{% url 'index' %}#contact" class="btn btn-sm btn-primary-custom">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
