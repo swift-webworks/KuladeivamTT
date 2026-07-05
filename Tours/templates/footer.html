@@ -1,0 +1,64 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <h5>Kuladeivam Tours and Travels</h5>
+        <p>Trusted travel partner with 5+ years of experience. All India Permit (AIP) — we take you anywhere across India safely and comfortably.</p>
+        <div class="social-icons mt-3">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/917094741070" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="{% url 'index' %}#home">Home</a></li>
+          <li><a href="{% url 'service' %}">Services</a></li>
+          <li><a href="{% url 'index' %}#about">About</a></li>
+          <li><a href="{% url 'index' %}#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5>Contact Info</h5>
+        <ul class="list-unstyled footer-links">
+          <li><i class="bi bi-telephone-fill me-2"></i><a href="tel:+917094741070">+91 70947 41070</a></li>
+          <li><i class="bi bi-envelope-fill me-2"></i><a href="mailto:sathishdon798@gmail.com">sathishdon798@gmail.com</a></li>
+          <li><i class="bi bi-geo-alt-fill me-2"></i><a href="https://maps.app.goo.gl/kKoeX9LaMWNSZhSE8?g_st=aw" target="_blank" rel="noopener">View on Google Maps</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5>Our Fleet</h5>
+        <ul class="list-unstyled footer-links">
+          <li>Mini Bus — 21 Seater</li>
+          <li>Mini Bus — 19 Seater</li>
+          <li>Sedan Cars — 13 Seater (x2)</li>
+          <li>Premium Car — 8 Seater</li>
+          <li>Tempo Traveller — 13 Seater</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; {% now "Y" %} Kuladeivam Tours &amp; Travels. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<div class="floating-actions">
+  <a href="{% url 'index' %}#contact" class="cta-float" aria-label="Book Now">
+    <i class="bi bi-calendar-check-fill"></i>
+    <span class="cta-float-label">Book Now</span>
+  </a>
+  <a href="https://wa.me/917094741070?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20trip" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+</div>
+
+<button class="scroll-top-btn" aria-label="Scroll to top">
+  <i class="bi bi-arrow-up"></i>
+</button>

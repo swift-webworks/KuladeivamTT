@@ -1,0 +1,20 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'index' %}">
+      <img src="{% static 'images/logo.jpeg' %}" alt="Kuladeivam Tours and Travels logo">
+      <span>Kuladeivam<br><small style="font-weight:400;font-size:0.7rem;">Tours &amp; Travels</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link {% if active == 'home' %}active{% endif %}" href="{% url 'index' %}#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link {% if active == 'service' %}active{% endif %}" href="{% url 'service' %}">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
